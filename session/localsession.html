@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" class="txt"/>
+<button>localsession存储数据</button>
+<button>localsession读取数据</button>
+<script>
+    var txt=document.querySelector(".txt");
+    var btn =document.querySelectorAll("button");
+    btn[0].onclick=function () {
+        window.localStorage.setItem("userName",txt.value);
+    }
+    btn[1].onclick=function () {
+        txt.value=window.localStorage.getItem("userName")
+    }
+</script>
+</body>
+</html>

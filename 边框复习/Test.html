@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            alert("xxx")
+            $.post("http://172.16.110.207:8081/manage/user/login",{ username:"qianyi",password:"957006133" },function (result) {
+                console.log(result)
+            });
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

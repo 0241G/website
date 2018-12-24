@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .layout {
+            width: 100%;
+            min-width: 320px;
+        }
+        header {
+            display: flex;
+        }
+        header a {
+            flex: 1;
+            background-color: pink;
+        }
+        header a img {
+            width: 100%;
+            display: block;
+        }
+        .nav .item{
+            display: flex;
+            background: pink;
+            height: 90px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .pub {
+            flex: 1;
+            border-right: 1px solid #ffffff;
+        }
+        .sub {
+            flex: 2;
+        }
+        .sub a {
+            float: left;
+            width: 50%;
+            height: 45px;
+            line-height: 45px;
+            border-bottom: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+            box-sizing: border-box;
+            text-align: center;
+            color: aqua;
+        }
+        .nav .item:nth-child(1) {
+            background: gold;
+        }
+        .nav .item:nth-child(2) {
+            background: beige;
+        }
+        .nav .item:nth-child(3) {
+            background: darkgreen;
+        }
+        .nav .item:nth-child(4) a {
+           width: 33.3%;
+        }
+        .extra {
+            display: flex;
+            text-align: center;
+        }
+        .extra a {
+            flex: 1;
+        }
+        .extra a img {
+            width: 100%;
+        }
+        footer section {
+            display: flex;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+        footer section a{
+            flex:1;
+            padding: 20px 0;
+            color: black;
+            text-align: center;
+        }
+        .copyright {
+            text-align: center;
+            line-height: 70px;
+        }
+        .copyright a{
+            color: gray;
+
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <!--头部-->
+    <header>
+        <a href="#">
+            <img src="images/banner.jpg">
+        </a>
+    </header>
+    <!--中间部分-->
+    <nav class="nav">
+        <div class="item">
+            <div class="pub"></div>
+            <div class="sub">
+                <a href="javascript:;">海外酒店</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">特惠酒店</a>
+                <a href="javascript:;">客栈公寓</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pub"></div>
+            <div class="sub">
+                <a href="javascript:;">火车票</a>
+                <a href="javascript:;">汽车票船票</a>
+                <a href="javascript:;">国际机票</a>
+                <a href="javascript:;">自驾专车</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pub"></div>
+            <div class="sub">
+                <a href="javascript:;">攻略身边</a>
+                <a href="javascript:;">邮轮</a>
+                <a href="javascript:;">周末游</a>
+                <a href="javascript:;">保险签证</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub">
+                <a href="javascript:;">门票玩乐</a>
+                <a href="javascript:;">美食</a>
+                <a href="javascript:;">全球购</a>
+                <a href="javascript:;">礼品卡</a>
+                <a href="javascript:;">出境WIFI</a>
+                <a href="javascript:;">更多</a>
+            </div>
+        </div>
+    </nav>
+   <!--其它部分-->
+    <section class="extra">
+        <a href=""><img src="images/extra_1.png"></a>
+        <a href=""><img src="images/extra_2.png"></a>
+    </section>
+    <!--底部-->
+    <footer>
+    <section>
+            <a href="javascript:;">电话预订</a>
+            <a href="javascript:;">下载客户端</a>
+            <a href="javascript:;">我的</a>
+    </section>
+        <!-- 版本信息 -->
+        <div class="copyright">
+            <!-- 网站链接 -->
+            <p class="link">
+                <a href="javascript:;">网站地图</a> |
+                <a href="javascript:;">ENGLISH</a> |
+                <a href="javascript:;">电脑版</a>
+            </p>
+            <p>©2015 携程旅行</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

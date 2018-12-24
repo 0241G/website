@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: aqua;
+        }
+        .musicbox {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+            perspective: 1000px;
+        }
+        .musicbox::before, .musicbox::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            transform-origin: bottom;
+            border: 1px solid #000;
+        }
+        .musicbox::before {
+            background: url("images/musicb.jpg");
+        }
+        .musicbox::after {
+            background: url("images/musict.jpg");
+            transition: all 2s;
+        }
+        .musicbox:hover::after {
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="musicbox">
+
+</div>
+</body>
+</html>

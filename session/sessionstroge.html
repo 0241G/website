@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" class="txt"/>
+<button>sessionStorage存储数据</button>
+<button>sessionStorage获取数据</button>
+<button>sessionStorage更新数据</button>
+<button>sessionStorage删除数据</button>
+<button>sessionStorage清空数据</button>
+<script>
+    var txt=document.querySelector(".txt");
+    var btn =document.querySelectorAll("button");
+    btn[0].onclick=function () {
+        window.sessionStorage.setItem("UserName",txt.value);
+        alert("1");
+    }
+    btn[1].onclick=function () {
+        txt.value=window.sessionStorage.getItem("UserName");
+    }
+</script>
+</body>
+</html>

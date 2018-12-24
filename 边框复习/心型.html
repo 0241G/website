@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         body {
+             background: aqua;
+         }
+        .box {
+            margin: 100px auto;
+            width: 200px;
+            height: 300px;
+            position: relative;
+            border: 1px solid #000;
+            font-size: 30px;
+        }
+        .box::before,.box::after{
+            content: "豆腐";
+            text-align: center;
+            color: yellow;
+            line-height: 40px;
+            width: 100%;
+            height: 100%;
+            background: red;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border-radius: 100px 100px 0 0;
+            transform: rotate(-45deg);
+
+        }
+        .box::after {
+            content: "空境";
+            left: 73px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    
+</div>
+
+</body>
+</html>
